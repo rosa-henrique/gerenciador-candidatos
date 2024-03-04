@@ -1,9 +1,11 @@
 using GerenciadorCandidatos.Api;
+using GerenciadorCandidatos.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 {
     builder.Services
-        .AddPresentation();
+        .AddPresentation()
+        .AddApplication();
 }
 
 var app = builder.Build();

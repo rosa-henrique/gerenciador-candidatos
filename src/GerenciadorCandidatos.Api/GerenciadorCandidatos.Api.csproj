@@ -1,15 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <InvariantGlobalization>true</InvariantGlobalization>
+    <UserSecretsId>1afd70cb-b4c7-4324-aa21-e5e54285c1ed</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
     <PackageReference Include="Swashbuckle.AspNetCore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GerenciadorCandidatos.Application\GerenciadorCandidatos.Application.csproj" />
+    <ProjectReference Include="..\GerenciadorCandidatos.Contracts\GerenciadorCandidatos.Contracts.csproj" />
+    <ProjectReference Include="..\GerenciadorCandidatos.Infrastructure\GerenciadorCandidatos.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
